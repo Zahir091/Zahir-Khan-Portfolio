@@ -1,0 +1,41 @@
+h1 {
+  color:red;
+}
+
+body {
+background-color:grey;
+        background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: cover;
+}
+
+p {
+	display:inline;
+    padding: 0px 10px;
+}
+
+
+
+.navBar {
+	background-color:black;
+    border-radius: 100px;
+    border: 4px black solid;
+    color:red;
+    padding-right: 1.2em;
+    font-size: 1.4em;
+    margin: 0em 2em;
+}
+
+.navRight {
+    display: flex;
+	justify-content: flex-end;
+}
+
+.navLeft {
+    float:left;
+    padding-left: 1em;
+}
+
+.navRight p {
+	padding: 0 1em;
+}
