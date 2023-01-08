@@ -1,10 +1,9 @@
 h1 {
   color:red;
-  
 }
 
 body {
-  background-color:grey;
+  background-image:url("https://static.vecteezy.com/system/resources/thumbnails/003/423/634/small/grey-gradient-abstract-backgrounds-free-vector.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -13,7 +12,7 @@ body {
 }
 
 .navBar {
-	background-color:black;
+	background-color:#000000;
   border-radius: 100px;
   border: 4px black solid;
   color:red;
@@ -28,11 +27,12 @@ body {
 }
 
 .navLeft {
-  float: left;
   font-family: 'Rowdies', cursive;
   font-size: 2.4em;
   color:#fafafa;
   padding: 15px 0 32px 2em;
+  text-align:center;
+  float: left;
 }
 
 
@@ -40,8 +40,25 @@ body {
 	padding: 0 1em;
 }
 
-.homePage {
-    border: solid black;
-  height: 500px;
-  margin: 0 7em;
+#featured {
+  text-align:center;
+  color:black;
+  margin: 1.25em 0;
 }
+
+.featuredAlign {
+  display:flex;
+  justify-content: space-around;
+}
+
+.featuredBox {
+  margin: 0 8em;
+  text-align:center;
+}
+
+.homeImage {
+  width:400px;
+  height: 250px;
+  padding: 0;
+}
+
