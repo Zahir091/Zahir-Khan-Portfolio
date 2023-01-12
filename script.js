@@ -8,12 +8,7 @@ $("#html").click(function() {
 
 $("#python").click(function() {
   $(".pythonProjectPage").show();
-  $(".homePage, .otherProjectsPage, .htmlProjectPage, .aboutMePage, .contactsPage").hide();
-});
-
-$("#other").click(function() {
-  $(".otherProjectsPage").show();
-  $(".homePage, .pythonProjectPage, .htmlProjectPage, .aboutMePage, .contactsPage").hide();
+  $(".homePage, .htmlProjectPage, .otherProjectsPage, .aboutMePage, .contactsPage").hide();
 });
 
 $("#homeButton").click(function() {
@@ -21,12 +16,17 @@ $("#homeButton").click(function() {
   $(".homePage").show();
 });
 
+$("#other").click(function() {
+  $(".htmlProjectPage, .pythonProjectPage, .homePage, .aboutMePage, .contactsPage").hide();
+  $(".otherProjectsPage").show();
+});
+
 $("#aboutMeButton").click(function() {
+  $(".htmlProjectPage, .pythonProjectPage, .homePage, .otherProjectsPage, .contactsPage").hide();
   $(".aboutMePage").show();
-  $(".homePage, .otherProjectsPage, .htmlProjectPage, .pythonProjectPage, .contactsPage").hide();
 });
 
 $("#contactsButton").click(function() {
+  $(".htmlProjectPage, .pythonProjectPage, .homePage, .otherProjectsPage, .aboutMePage").hide();
   $(".contactsPage").show();
-  $(".homePage, .otherProjectsPage, .htmlProjectPage, .aboutMePage, .pythonProjectPage").hide();
 });
