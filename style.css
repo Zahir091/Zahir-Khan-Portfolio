@@ -64,13 +64,24 @@ body {
 }
 
 .projectsImage {
-  width:70%;
-  height: 58%;
+  width:350px;
+  height: 200px;
   padding: 0;
+  border: white ridge 10px;
 }
 
 
+h4 {
+  font-size: 1.7em;
+}
 
+.aboutMePage bio {
+  padding: 0 5em;
+}
+
+a {
+  text-decoration: none;
+}
 
 
 /*This is the dropdown menu for the Projects button on the nav-bar */
@@ -120,8 +131,4 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover #projectsButton {
   background-color: #fcfcfc;
-}
-
-h4 {
-  font-size: 1.7em;
 }
