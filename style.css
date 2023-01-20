@@ -202,5 +202,11 @@ a:visited {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover #projectsButton {
-  background-color: #fcfcfc;
+  background-color: #000000;
+  color:white;
+}
+
+#contactsButton:hover {
+  background-color: #000000;
+  color:white;
 }
