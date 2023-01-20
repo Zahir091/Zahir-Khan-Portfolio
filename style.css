@@ -49,7 +49,19 @@ h4 {
 
 a {
   text-decoration: none;
+  color:black;
 }
+
+
+a:visited {
+  text-decoration: none;
+  color:white;
+}
+
+.otherProjectsPage img {
+  height: 15em;
+}
+
 
 /* ------------------- */
 /*General Pages Alignment and Layout*/ 
@@ -63,12 +75,14 @@ a {
 .pageAlign {
   display:flex;
   justify-content: space-around;
-  
 }
 
 .projectBox {
   text-align:center;
   margin: 2em 0;
+  padding: 2em;
+  background-color: rgb(14, 89, 160, 0.4);
+  border-radius: 20px;
 }
 
 .projectBox:hover {
@@ -84,7 +98,7 @@ a {
   width:350px;
   height: 200px;
   padding: 0;
-  border: white ridge 10px;
+  border: #f5f5f5 ridge 10px;
 }
 /* ------------------- */
 
@@ -97,14 +111,58 @@ a {
 #bioBox {
   padding: 0em;
   border:black solid;
+  text-align:center;
 }
+
+
+#bioBox:hover {
+  transform:none;
+}
+
 
 #bioBox p {
   border:black dashed;
   padding: 33px;
-  width: 8em;
+  width: 20em;
+  font-size: 24px;
 }
 
+#aboutImage {
+  width: 205px;
+  height: 300px;
+  margin: 2em;
+}
+
+#pictureBox {
+  background-color:black;
+  border: solid white;
+   margin: 2em 5em;
+  padding: 0 1.3em;
+}
+
+.resume {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 3em;
+  border-radius: 14px;
+}
+
+.resume:hover {
+  background-color: #50c1f2;
+  color:white;
+}
+
+#pictureBox:hover {
+  transform:none;
+}
+
+.resume a {
+  color:black;
+}
+
+.resume a:visted {
+  color:black;
+}
 /*This is the dropdown menu for the Projects button on the nav-bar */
 /* Dropdown Button */
 #projectsButton {
