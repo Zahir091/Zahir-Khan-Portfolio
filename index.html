@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width" initial-scale=1.0>
   <title>Zahir Khan's Portfolio</title>
   <link href="style.css" rel="stylesheet" type="text/css"/>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -12,165 +12,138 @@
 
 <body>
   <div class="navBar">
+    
     <div class="navLeft">
       Zahir Khan's Portfolio
     </div>
     <div class='navRight'>
-      <p id="homeButton">Home</p>
-      <p id="aboutMeButton">About Me</p>
       <div class="dropdown">
         <p id="projectsButton">Projects</p>
         <div class="dropdown-menu">
-          <a href="#" id="html">HTML, CSS, JavaScript</a>
-          <a href="#" id="python">Python</a>
-          <a href="#" id="other">Other Projects</a>
+          <a href="#projectHTML" id="html">HTML, CSS, JS</a>
+          <a href="#projectPython" id="python">Python</a>
+          <a href="#projectOthers" id="other">App Design</a>
         </div>
       </div>
+      
+      <p id="aboutMeButton">About Me</p>
+      
       <div class="dropdown">
         <p id="contactsButton">Contacts</p>
         <div class="dropdown-menu">
-          <a href="mailto: zahirk3@nycstudents.net" target="_blank" id="Email">Email</a>
+          <a href="mailto: zahirk0051@gmail.com" target="_blank" id="Email">Email</a>
           <a href="https://www.linkedin.com/in/zahir-khan-a0a67b222/" target="_blank" id="LinkedIn">LinkedIn</a>
+          <a href="https://docs.google.com/document/d/17N9vEKYlFNmmkTCPzY4GyTZe0W9zJgP4l5eYSkyliiI/edit?usp=sharing" id="Resume" target="_blank">Resume</a>
         </div>
       </div>
     </div>
+    
   </div>
+    
+    <div class="all-projects">
+      <div id="projects">
+        <!--Project List begins here-->
+        <div class="PythonSection" id="projectPython">
+          <h1 class="pageHeader">Python Projects</h1>
+          <div class="pageAlign">
+            <div class="projectBox">
+              <a href="https://replit.com/@Zahir091/Tic-Tac-Toe-Game" target="_blank">
+                <img src="Images/tictac.png" class="projectsImage">
+                <h4>Tic Tac Toe Project</h4>
+              </a>
+            </div>
+            <div class="projectBox">
+              <a href="https://replit.com/@Zahir091/Covid-Vaccine-Confirmation-Ticket" target="_blank" target="_blank">
+              <img src="Images/vax.png" class="projectsImage">
+              <h4>COVID-19 Vaccine Finder</h4>
+              </a>
+            </div>
+          </div>
+          
+          <div class="pageAlign">
+            
+            <div class="projectBox">
+              <a href="https://replit.com/@Zahir091/Area-Calculator" target="_blank">
+              <img src="Images/area.png" class="projectsImage">
+              <h4>Area Calculator</h4>
+              </a>
+            </div>
+            
+            <div class="projectBox">
+              <a href="https://replit.com/@Zahir091/Zombie-Project" target="_blank">
+              <img src="Images/zombie.png" class="projectsImage">
+              <h4>Zombie Project</h4>             
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="HTMLSection" id="projectHTML">
+          
+          <h1 class="pageHeader">HTML, CSS, JavaScript Projects</h1>
+          
+          <div class="pageAlign">
+            
+            <div class="projectBox">
+              <a href="https://Movies-Project.zahir091.repl.co" target="_blank">
+              <img src="Images/movies.png" class="projectsImage">
+              <h4>My Favorite Movies</h4>
+              </a>
+            </div>
+            
+            <div class="projectBox">
+              <a href="https://zahir091.github.io/Escape-Room/" target="_blank" target="_blank">
+                <img src="Images/escape.png" class="projectsImage">
+                <h4>Escape Room</h4>
+              </a>
+            </div>
+            
+          </div>
+          
+          <div class="pageAlign">
+              <div class="projectBox">
+                <a href="https://zahir091.github.io/Gallery-Project/" target="_blank">
+                <img src="Images/gallery.png" class="projectsImage">
+                <h4>Photo Gallery</h4>
+                </a>
+            </div>
+            
+            <div class="projectBox">
+              <a href="https://celebrity-webpage-project.zahir091.repl.co/" target="_blank">
+              <img src="Images/celeb.png" class="projectsImage" id="html4">
+              <h4>Celebrity Webpage Project</h4>
+              </a>
+            </div>
+          </div>    
+        </div>
+  
+         <div class="otherProjectSection"  id="projectOthers">
+          <h1 class="pageHeader">App Design</h1>
+          <div class="pageAlign">
+            <div class="projectBox">
+              <a href="https://www.figma.com/proto/dwTtqEDqfDBtZv7plUXdbe/Infy-App-Design-(Need-Food)?node-id=34%3A22&scaling=scale-down&page-id=0%3A1&starting-point-node-id=205%3A176" target="_blank">
+              <img src="Images/food.png" class="projectsImage">
+              <h4>Need Food</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!--Project List ends here-->
+      </div>
 
-  <div class="homePage">
-    <h1 class="pageHeader">Featured Works:</h1>
-    <div class="pageAlign">
-      <div class="projectBox">
-        <a href="https://replit.com/@Zahir091/Tic-Tac-Toe-Game" target="_blank">
-        <img src="Images/tictac.png" class="projectsImage">
-        <h4>Tic Tac Toe Project</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://zahir091.github.io/Escape-Room/" target="_blank" target="_blank">
-          <img src="Images/escape.png" class="projectsImage">
-          <h4>Escape Room</h4>
-        </a>
-      </div>
-    </div>
-  </div>
+    
 
-  <div class="htmlProjectPage">
-    <h1 class="pageHeader">HTML, CSS, JavaScript Projects</h1>
-    <div class="pageAlign">
-      <div class="projectBox">
-        <a href="https://Movies-Project.zahir091.repl.co" target="_blank">
-        <img src="Images/movies.png" class="projectsImage">
-        <h4>My Favorite Movies</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://zahir091.github.io/Escape-Room/" target="_blank" target="_blank">
-          <img src="Images/escape.png" class="projectsImage">
-          <h4>Escape Room</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://Lab-16.zahir091.repl.co" target="_blank">
-        <img src="Images/fort.png" class="projectsImage">
-        <h4>Fortune Teller</h4>
-        </a>
-      </div>
-    </div>
-    <div class="pageAlign">
-        <div class="projectBox">
-        <a href="https://celebrity-webpage-project.zahir091.repl.co/" target="_blank">
-        <img src="Images/celeb.png" class="projectsImage" id="html4">
-        <h4>Celebrity Webpage Project</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://zahir091.github.io/Character-Quiz/" target="_blank">
-        <img src="Images/char.png" class="projectsImage">
-        <h4>Character Quiz</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://zahir091.github.io/Gallery-Project" target="_blank">
-        <img src="Images/gallery.png" class="projectsImage">
-        <h4>Photo Gallery</h4>
-        </a>
-      </div>
-    </div>
-  </div>
 
-  <div class="pythonProjectPage">
-    <h1 class="pageHeader">Python Projects</h1>
-    <div class="pageAlign">
-      <div class="projectBox">
-        <a href="https://replit.com/@Zahir091/Tic-Tac-Toe-Game" target="_blank">
-        <img src="Images/tictac.png" class="projectsImage">
-        <h4>Tic Tac Toe Project</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://replit.com/@Zahir091/Covid-Vaccine-Confirmation-Ticket" target="_blank" target="_blank">
-        <img src="Images/vax.png" class="projectsImage">
-        <h4>COVID-19 Vaccine Finder</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://replit.com/@Zahir091/Area-Calculator" target="_blank">
-        <img src="Images/area.png" class="projectsImage">
-        <h4>Area Calculator</h4>
-        </a>
-      </div>
-    </div>
-    <div class="pageAlign">
-      <div class="projectBox">
-        <a href="https://replit.com/@Zahir091/Chatbot-Project-1" target="_blank">
-        <img src="Images/chat.png" class="projectsImage">
-        <h4>Chatbot Project</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://replit.com/@Zahir091/Zombie-Project" target="_blank">
-        <img src="Images/zombie.png" class="projectsImage">
-        <h4>Zombie Project</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://replit.com/@Zahir091/Login-Form" target="_blank">
-        <img src="Images/login.png" class="projectsImage">
-        <h4>Login Form</h4>
-        </a>
-      </div>
-    </div>
-  </div>
-
-  <div class="otherProjectsPage">
-    <h1 class="pageHeader">Other Projects</h1>
-    <div class="pageAlign">
-      <div class="projectBox">
-        <a href="https://www.figma.com/proto/dwTtqEDqfDBtZv7plUXdbe/Infy-App-Design-(Need-Food)?node-id=34%3A22&scaling=scale-down&page-id=0%3A1&starting-point-node-id=205%3A176" target="_blank">
-        <img src="Images/food.png" class="projectsImage">
-        <h4>Need Food (App Design)</h4>
-        </a>
-      </div>
-      <div class="projectBox">
-        <a href="https://www.figma.com/proto/skMWjHq8ODoSXOhPbXSHlu/Moviebot?node-id=1%3A15263&starting-point-node-id=1%3A15263" target="_blank">
-        <img src="Images/movieBot.png" class="projectsImage" id="e">
-        <h4>ChatBot Project (App Design)</h4>
-        </a>
-      </div>
-    </div>
-  </div>
 
   <div class="aboutMePage">
     <h1 class="pageHeader">About Me</h1>
     <div class="pageAlign" id="alignAbout">
       <div class="projectBox" id="bioBox">
-        <p>Hi, my name is Zahir Khan. I attend Thomas A. Edison CTE High School. Inside this school I am enrolled under the Web and App Development CTE class. This class gives me exposure to concepts within the field of web development. I have learned to code with HTML, CSS, JavaScript, and Python. I aspire to major within the field of computer science. I hope to start a career to create mobile applications .</p>
-         <a href="https://docs.google.com/document/d/17N9vEKYlFNmmkTCPzY4GyTZe0W9zJgP4l5eYSkyliiI/edit?usp=sharing" target="_blank"><button class="resume">Resume</button></a>
-      </div>
-      <div class="projectBox" id="pictureBox">
-        <img src="person.jpg" class="projectsImage" id="aboutImage">
+        <p>Hi, welcome to my portfolio. My name is Zahir Khan. I currently Thomas A. Edison CTE High School. Inside this school I am enrolled under the Web and App Development CTE class. This class gives me exposure to concepts within the field of web development and app development. I have learned to code with HTML, CSS, JavaScript, and Python. I aspire to major within the field of computer science. I hope to start a career to create mobile applications.</p>
       </div>
     </div>
+    
+  </div>
   </div>
   <script src="script.js"></script>
   <script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>

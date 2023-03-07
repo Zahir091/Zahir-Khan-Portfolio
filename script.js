@@ -1,28 +1,12 @@
-$(".htmlProjectPage, .pythonProjectPage, .otherProjectsPage, .aboutMePage").hide();
-$(".homePage").show();
-
-$("#html").click(function() {
-  $(".htmlProjectPage").show();
-  $(".homePage, .pythonProjectPage, .otherProjectsPage, .aboutMePage").hide();
-});
-
-$("#python").click(function() {
-  $(".pythonProjectPage").show();
-  $(".homePage, .htmlProjectPage, .otherProjectsPage, .aboutMePage").hide();
-});
-
-$("#homeButton").click(function() {
-  $(".htmlProjectPage, .pythonProjectPage, .otherProjectsPage, .aboutMePage").hide();
-  $(".homePage").show();
-});
-
-$("#other").click(function() {
-  $(".htmlProjectPage, .pythonProjectPage, .homePage, .aboutMePage").hide();
-  $(".otherProjectsPage").show();
-});
+$("#projects").show();
+$(".aboutMePage").hide();
 
 $("#aboutMeButton").click(function() {
-  $(".htmlProjectPage, .pythonProjectPage, .homePage, .otherProjectsPage").hide();
+  $("#projects").hide();
   $(".aboutMePage").show();
 });
 
+$("#projectsButton, #html, #python, #other").click(function() {
+    $("#projects").show();
+  $(".aboutMePage").hide();
+})
