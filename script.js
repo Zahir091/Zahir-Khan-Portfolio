@@ -1,5 +1,7 @@
 $("#projects").show();
 $(".aboutMePage").hide();
+$("#placeholder").hide();
+
 
 $("#aboutMeButton").click(function() {
   $("#projects").hide();
